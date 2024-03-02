@@ -64,13 +64,13 @@ Read [this](https://telegram.dog/sources_cods) before you start messing up with 
 You can deploy this bot anywhere.
 
 
-<a target="_blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/LazyDeveloperr/LazyPrincessv2&branch=master&name=lazyprincessbot"><img alt="Deploy to Koyeb" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg"></a>
+<a target="_blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/shinchan2627/Master-Roshi-Bot&branch=main&name=Master-Roshi-Bot"><img alt="Deploy to Koyeb" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg"></a>
 
 
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
-<a href="https://heroku.com/deploy?template=https://github.com/LazyDeveloperr/LazyPrincessv2">
+<a href="https://heroku.com/deploy?template=https://github.com/shinchan/Master-Roshi-Bot">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
@@ -79,7 +79,7 @@ You can deploy this bot anywhere.
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
-git clone https://github.com/LazyDeveloperr/LazyPrincessv2
+git clone https://github.com/shinchan2627/Master-Roshi-Bot
 # Install Packages
 pip3 install -U -r requirements.txt
 Edit info.py with variables as given below then run bot
@@ -126,12 +126,9 @@ python3 bot.py
 
 
 ## Thanks to 
- - 🦋 Thank you [LazyDeveloper](https://github.com/LazyDeveloperr) for helping us in this journey ❤️.
- - 🔺 From the side of [LazyDeveloper](https://github.com/LazyDeveloperr) Thank you [Team-EvaMaria](https://github.com/EvamariaTG) for their awesome repository.
- - 🔺 Thanks To Dan For His Awesome [Library](https://github.com/pyrogram/pyrogram).
- - 🔺 Thanks To Mahesh For His Awesome [Media-Search-bot](https://github.com/Mahesh0253/Media-Search-bot).
- - 🔺 Thanks To [Trojanz](https://github.com/trojanzhex) for Their Awesome [Unlimited Filter Bot](https://github.com/TroJanzHEX/Unlimited-Filter-Bot) And [AutoFilterBoT](https://github.com/trojanzhex/auto-filter-bot).
- - Thanks To All Everyone In This Journey
+ - 🦋 Thank you [Praveen Kumar K](https://github.com/shinchan2627) for helping us in this journey ❤️.
+ - 🔺 From the side of [Praveen Kumar K](https://github.com/shinchan2627) Thank you 
+ 
 
 ### Note
 
