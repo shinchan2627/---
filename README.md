@@ -135,7 +135,7 @@ python3 bot.py
 
 ### Note
 
-[Join Developer Channel](https://telegram.dog/LazyDeveloper): LazyDeveloper
+[Join Developer Channel](https://t.me/tamcinemas): LazyDeveloper
 
 ## Disclaimer
 [![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
