@@ -12,8 +12,8 @@ def is_enabled(value, default):
 
 class script(object):
     HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://t.me/tamcinemas')
-    START_TXT = environ.get("START_TXT", '''𝙃𝙚𝙮 {},
-𝙈𝙮𝙨𝙚𝙡𝙛 <a href=https://t.me/{}>{}</a>,\n\n𝗧𝗿𝘂𝘀𝘁 𝗺𝗲 ❗ 𝗜 𝗰𝗮𝗻 𝗼𝗳𝗳𝗲𝗿 𝘆𝗼𝘂 𝗠𝗢𝗩𝗜𝗘𝗦/𝗦𝗘𝗥𝗜𝗘𝗦. 𝗦𝗮𝘃𝗲 𝘆𝗼𝘂𝗿 𝗧𝗶𝗺𝗲 𝗯𝘆 𝗔𝗱𝗱𝗶𝗻𝗴 𝗠𝗲𝗵 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗴𝗿𝗼𝘂𝗽 𝗮𝗻𝗱 𝗲𝗻𝗷𝗼𝘆 𝗺𝘆 𝗰𝗮𝗽𝗮𝗯𝗶𝗹𝗶𝘁𝗶𝗲𝘀 \n\nᴀʀᴇ ʏᴏᴜ ʀᴇᴀᴅʏ ᴍʏ ʙᴜᴅᴅʏ...🤪''')
+    START_TXT = environ.get("START_TXT", '''✨ 𝙃𝙚𝙮 {}.
+𝙈𝙮𝙨𝙚𝙡𝙛 {bot},\n\n𝗧𝗿𝘂𝘀𝘁 𝗺𝗲 ❗ 𝗜 𝗰𝗮𝗻 𝗼𝗳𝗳𝗲𝗿 𝘆𝗼𝘂 𝗠𝗢𝗩𝗜𝗘𝗦/𝗦𝗘𝗥𝗜𝗘𝗦. 𝗦𝗮𝘃𝗲 𝘆𝗼𝘂𝗿 𝗧𝗶𝗺𝗲 𝗯𝘆 𝗔𝗱𝗱𝗶𝗻𝗴 𝗠𝗲𝗵 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗴𝗿𝗼𝘂𝗽 𝗮𝗻𝗱 𝗲𝗻𝗷𝗼𝘆 𝗺𝘆 𝗰𝗮𝗽𝗮𝗯𝗶𝗹𝗶𝘁𝗶𝗲𝘀 \n\nᴀʀᴇ ʏᴏᴜ ʀᴇᴀᴅʏ ᴍʏ ʙᴜᴅᴅʏ...🤪''')
   
     HELP_TXT = "Hᴇʏ {}\nHᴇʀᴇ Mꜱ Mʏ Hᴇʟᴩ"
    
@@ -21,9 +21,9 @@ class script(object):
 ✯ 𝘾𝙧𝙚𝙖𝙩𝙤𝙧: <a href=t.me/tamcinemas>𝙋𝙧𝙖𝙫𝙚𝙚𝙣 𝙆𝙪𝙢𝙖𝙧 𝙆</a>
 ✯ 𝙇𝙞𝙖𝙗𝙧𝙖𝙧𝙮: 𝙋𝙮𝙧𝙤𝙜𝙧𝙖𝙢
 ✯ 𝙇𝙖𝙣𝙜𝙪𝙖𝙜𝙚: 𝙋𝙮𝙩𝙝𝙤𝙣 3
-✯ 𝘿𝙖𝙩𝙖𝙗𝙖𝙨𝙚: 𝙈𝙤𝙣𝙜𝙤 𝘿𝘽
+✯ 𝘿𝙖𝙩𝙖𝙗𝙖𝙨𝙚: 𝙈𝙤𝙣𝙜𝙤-𝘿𝘽
 ✯ 𝘽𝙤𝙩 𝙎𝙚𝙧𝙫𝙚𝙧: 𝙆𝙤𝙮𝙚𝙗
-✯ 𝘽𝙪𝙞𝙡𝙙 𝙎𝙩𝙖𝙩𝙪𝙨: v2.0.1 [ 𝙈𝙖𝙨𝙩𝙚𝙧 𝙍𝙤𝙨𝙝𝙞 🪶 ]"""
+✯ 𝘽𝙪𝙞𝙡𝙙 𝙎𝙩𝙖𝙩𝙪𝙨: v2.0.1 [ 𝙈𝙖𝙨𝙩𝙚𝙧 𝙍𝙤𝙨𝙝𝙞 🪶]"""
    
     SOURCE_TXT ="""<b>NOTE:</b>
 - ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ʜᴇʀᴇ ◉› :<a href=https://github.com/shinchan2627/Master-Roshi-Bot>𝙈𝙖𝙨𝙩𝙚𝙧 𝙍𝙤𝙨𝙝𝙞 🪶</a>
