@@ -41,27 +41,25 @@ async def start(client, message):
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
-        buttons = [
-            [
-            InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+        buttons = [[
+            InlineKeyboardButton('➕️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],
             [
             InlineKeyboardButton('⚡ Owner ⚡', url=f"https://t.me/tamcinemas"),
             InlineKeyboardButton('🔔 Support 🤖', [InlineKeyboardButton('⚡ Rq-group ', url=f"https://t.me/+0TBKVN0Z6yM1MTc1"), InlineKeyboardButton('Channel 🤖',url='https://t.me/tamcinemas') ],[InlineKeyboardButton(' Update ⚡', url=f"https://t.me/tamcinemas"), InlineKeyboardButton('Support 🔔',url='https://t.me/tamcinemas')])],
             [
-             InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
-            InlineKeyboardButton('♥️ About ♥️', callback_data='about')
+             InlineKeyboardButton('🙆🏻 Hᴇʟᴩ 🕸️', callback_data='help'),
+            InlineKeyboardButton('♥️ Aʙᴏᴜᴛ ♥️', callback_data='about')
         ],
-        [InlineKeyboardButton('🍂𝙏𝙖𝙢𝙞𝙡 𝘾𝙞𝙣𝙚𝙢𝙖𝙨 𝙃𝘿🍃', url=f"https://t.me/tamcinemas")]]
+        [InlineKeyboardButton('🍂𝙏𝙖𝙢𝙞𝙡 𝘾𝙞𝙣𝙚𝙢𝙖𝙨 𝙃𝘿🍃', url=f"https://t.me/tamcinemas")
+        ]]
         
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-        return
+        m = await message.reply_sticker("CAACAgUAAxkBAAEBvlVk7YKnYxIHVnKW2PUwoibIR2ygGAACBAADwSQxMYnlHW4Ls8gQHgQ") 
+        await asyncio.sleep(2)
+        await message.reply_photo(photo=random.choice(PICS), caption=START_TXT.format(user=message.from_user.mention, bot=client.mention), reply_markup=InlineKeyboardMarkup(buttons), parse_mode=enums.ParseMode.HTML)
+        return await m.delete()
+
+    
     if AUTH_CHANNEL and not await is_subscribed(client, message):
         try:
             invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
@@ -71,7 +69,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🔥 Join Updates Channel 🔥", url=invite_link.invite_link
+                    "Jᴏɪɴ Mʏ Cʜᴀɴɴᴇʟ ✨", url=invite_link.invite_link
                 )
             ]
         ]
@@ -80,9 +78,9 @@ async def start(client, message):
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
-                btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"{pre}#{file_id}")])
+                btn.append([InlineKeyboardButton(" ⟳ Tʀʏ Aɢᴀɪɴ", callback_data=f"{pre}#{file_id}")])
             except (IndexError, ValueError):
-                btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
+                btn.append([InlineKeyboardButton(" ⟳ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
             text="**Please Join My Updates Channel to use this Bot!**",
@@ -92,31 +90,29 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [ [
-            InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],
             [
             InlineKeyboardButton('⚡ Owner ⚡', url=f"https://t.me/tamcinemas"),
             InlineKeyboardButton('🔔 Support 🤖', [InlineKeyboardButton('⚡ Rq-group ', url=f"https://t.me/+0TBKVN0Z6yM1MTc1"), InlineKeyboardButton('Channel 🤖',url='https://t.me/tamcinemas') ],[InlineKeyboardButton(' Update ⚡', url=f"https://t.me/tamcinemas"), InlineKeyboardButton('Support 🔔',url='https://t.me/tamcinemas')])],
             [
-             InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
+             InlineKeyboardButton('🙆🏻 Hᴇʟᴩ 🕸️', callback_data='help'),
             InlineKeyboardButton('♥️ About ♥️', callback_data='about')
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-        return
+        m = await message.reply_sticker("CAACAgUAAxkBAAEBvlVk7YKnYxIHVnKW2PUwoibIR2ygGAACBAADwSQxMYnlHW4Ls8gQHgQ")
+        await asyncio.sleep(2)
+        await message.reply_photo(photo=random.choice(PICS), caption=START_MESSAGE.format(user=message.from_user.mention, bot=client.mention), reply_markup=InlineKeyboardMarkup(buttons), parse_mode=enums.ParseMode.HTML)
+        return await m.delete()
+        
     data = message.command[1]
     try:
         pre, file_id = data.split('_', 1)
     except:
         file_id = data
         pre = ""
+        
     if data.split("-", 1)[0] == "BATCH":
-        sts = await message.reply("<b>𝙰𝙲𝙲𝙴𝚂𝚂𝙸𝙽𝙶 𝙵𝙸𝙻𝙴𝚂.../</b>")
+        sts = await message.reply("<b>PLEASE WAIT...../</b>")
         file_id = data.split("-", 1)[1]
         msgs = BATCH_FILES.get(file_id)
         if not msgs:
@@ -164,7 +160,7 @@ async def start(client, message):
         await sts.delete()
         return
     elif data.split("-", 1)[0] == "DSTORE":
-        sts = await message.reply("<b>𝙰𝙲𝙲𝙴𝚂𝚂𝙸𝙽𝙶 𝙵𝙸𝙻𝙴𝚂.../</b>")
+        sts = await message.reply("<b>PLEASE WAIT...../</b>")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
         try:
