@@ -14,8 +14,9 @@ class script(object):
     HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://t.me/tamcinemas')
     START_TXT = environ.get("START_TXT", '''𝙃𝙚𝙮 {},
 𝙈𝙮𝙨𝙚𝙡𝙛 <a href=https://t.me/{}>{}</a>,\n\n𝗧𝗿𝘂𝘀𝘁 𝗺𝗲 ❗ 𝗜 𝗰𝗮𝗻 𝗼𝗳𝗳𝗲𝗿 𝘆𝗼𝘂 𝗠𝗢𝗩𝗜𝗘𝗦/𝗦𝗘𝗥𝗜𝗘𝗦. 𝗦𝗮𝘃𝗲 𝘆𝗼𝘂𝗿 𝗧𝗶𝗺𝗲 𝗯𝘆 𝗔𝗱𝗱𝗶𝗻𝗴 𝗠𝗲𝗵 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗴𝗿𝗼𝘂𝗽 𝗮𝗻𝗱 𝗲𝗻𝗷𝗼𝘆 𝗺𝘆 𝗰𝗮𝗽𝗮𝗯𝗶𝗹𝗶𝘁𝗶𝗲𝘀 \n\nᴀʀᴇ ʏᴏᴜ ʀᴇᴀᴅʏ ᴍʏ ʙᴜᴅᴅʏ...🤪''')
-    HELP_TXT = """𝙷𝙴𝚈 {}
-🄷🄴🅁🄴 🄸🅂 🄼🅈 🄷🄴🄻🄿 🄲🄾🄼🄼🄰🄽🄳🅂"""
+  
+    HELP_TXT = "Hᴇʏ {}\nHᴇʀᴇ Mꜱ Mʏ Hᴇʟᴩ"
+   
     ABOUT_TXT = """✯ 𝙈𝙮 𝙉𝙖𝙢𝙚: {}
 ✯ 𝘾𝙧𝙚𝙖𝙩𝙤𝙧: <a href=t.me/tamcinemas>𝙋𝙧𝙖𝙫𝙚𝙚𝙣 𝙆𝙪𝙢𝙖𝙧 𝙆</a>
 ✯ 𝙇𝙞𝙖𝙗𝙧𝙖𝙧𝙮: 𝙋𝙮𝙧𝙤𝙜𝙧𝙖𝙢
@@ -23,9 +24,18 @@ class script(object):
 ✯ 𝘿𝙖𝙩𝙖𝙗𝙖𝙨𝙚: 𝙈𝙤𝙣𝙜𝙤 𝘿𝘽
 ✯ 𝘽𝙤𝙩 𝙎𝙚𝙧𝙫𝙚𝙧: 𝙆𝙤𝙮𝙚𝙗
 ✯ 𝘽𝙪𝙞𝙡𝙙 𝙎𝙩𝙖𝙩𝙪𝙨: v2.0.1 [ 𝙈𝙖𝙨𝙩𝙚𝙧 𝙍𝙤𝙨𝙝𝙞 🪶 ]"""
-    SOURCE_TXT = """<b>𝙈𝙖𝙨𝙩𝙚𝙧 𝙍𝙤𝙨𝙝𝙞 🪶 is an open source project</b>
+   
+    SOURCE_TXT ="""<b>NOTE:</b>
+- ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ʜᴇʀᴇ ◉› :<a href=https://github.com/shinchan2627/Master-Roshi-Bot>𝙈𝙖𝙨𝙩𝙚𝙧 𝙍𝙤𝙨𝙝𝙞 🪶</a>
 
-You can easily get its source code from github - <a href='https://github.com/shinchan2627/Master-Roshi-Bot'>Praveen Kumar K</a>"""
+<b>ᴅᴇᴠ: <a herf=https://t.me/tamcinemas>Praveen Kumar K</a></b>"""
+    
+    
+    """<b>𝙈𝙖𝙨𝙩𝙚𝙧 𝙍𝙤𝙨𝙝𝙞 🪶 is an open source project</b>
+
+You can easily get its source code from github - <a href='https://github.com/shinchan2627/Master-Roshi-Bot'></a>"""
+   
+    
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and Search Bot will respond whenever a keyword is found the message
@@ -40,6 +50,7 @@ You can easily get its source code from github - <a href='https://github.com/shi
 • /filters - <code>list all the filters of a chat</code>
 • /del - <code>delete a specific filter in chat</code>
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
+   
     BUTTON_TXT = """Help: <b>Buttons</b>
 
 - Search Bot Supports both url and alert inline buttons.
@@ -54,6 +65,7 @@ You can easily get its source code from github - <a href='https://github.com/shi
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
+    
     AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
 
 <b>NOTE:</b>
@@ -61,6 +73,7 @@ You can easily get its source code from github - <a href='https://github.com/shi
 2. make sure that your channel does not contains camrips, porn and fake files.
 3. Forward the last message to me with quotes.
  I'll add all the files in that channel to my db."""
+   
     CONNECTION_TXT = """Help: <b>Connections</b>
 
 - Used to connect bot to PM for managing filters 
@@ -74,6 +87,7 @@ You can easily get its source code from github - <a href='https://github.com/shi
 • /connect  - <code>connect a particular chat to your PM</code>
 • /disconnect  - <code>disconnect from a chat</code>
 • /connections - <code>list all your connections</code>"""
+   
     EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
 
 <b>NOTE:</b>
@@ -84,6 +98,7 @@ these are the extra features of Search Bot
 • /info  - <code>get information about a user.</code>
 • /imdb  - <code>get the film information from IMDb source.</code>
 • /search  - <code>get the film information from various sources.</code>"""
+    
     ADMIN_TXT = """Help: <b>Admin mods</b>
 
 <b>NOTE:</b>
@@ -101,17 +116,28 @@ This module only works for my admins
 • /unban  - <code>to unban a user.</code>
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
+  
+    
     STATUS_TXT = """★ 𝙏𝙤𝙩𝙚𝙡 𝙁𝙞𝙡𝙚𝙨: <code>{}</code>
 ★ 𝙏𝙤𝙩𝙚𝙡 𝙐𝙨𝙚𝙧𝙨: <code>{}</code>
 ★ 𝙏𝙤𝙩𝙚𝙡 𝘾𝙝𝙖𝙩𝙨: <code>{}</code>
 ★ 𝙐𝙨𝙚𝙙 𝙎𝙩𝙤𝙧𝙖𝙜𝙚: <code>{}</code> 𝙼𝚒𝙱
 ★ 𝙁𝙧𝙚𝙚 𝙎𝙩𝙤𝙧𝙖𝙜𝙚: <code>{}</code> 𝙼𝚒𝙱"""
-    LOG_TEXT_G = """#NewGroup
-Group = {}(<code>{}</code>)
-Total Members = <code>{}</code>
-Added By - {}
-"""
-    LOG_TEXT_P = """#NewUser
-ID - <code>{}</code>
-Name - {}
-"""
+  
+    LOG_TEXT_G = """<b>#ɴᴇᴡ_ɢʀᴏᴜᴩ
+
+◉ ɢʀᴏᴜᴩ: {a}
+◉ ɢ-ɪᴅ: <code>{b}</code>
+◉ ʟɪɴᴋ: @{c}
+◉ ᴍᴇᴍʙᴇʀꜱ: <code>{d}</code>
+◉ ᴀᴅᴅᴇᴅ ʙʏ: {e}
+
+◉ ʙʏ: @{f}</b>"""
+  
+    LOG_TEXT_P = """#ɴᴇᴡ_ᴜꜱᴇʀ
+    
+◉ ᴜꜱᴇʀ-ɪᴅ: <code>{}</code>
+◉ ᴀᴄᴄ-ɴᴀᴍᴇ: {}
+◉ ᴜꜱᴇʀɴᴀᴍᴇ: @{}
+
+◉ ʙʏ: @{}</b>"""
