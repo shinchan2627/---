@@ -121,8 +121,6 @@ python3 bot.py
 [![telegram badge](https://img.shields.io/badge/Telegram-Group-30302f?style=flat&logo=telegram)](https://telegram.dog/LazyPrincessSupport)
 [![telegram badge](https://img.shields.io/badge/Telegram-Channel-30302f?style=flat&logo=telegram)](https://telegram.dog/LazyDeveloper)
 
-## with Love  
-* [![LazyPrincess-Devs](https://img.shields.io/static/v1?label=LazyPrincess&message=devs&color=critical)](https://telegram.dog/LazyDeveloper)
 
 
 ## Thanks to 
@@ -132,7 +130,7 @@ python3 bot.py
 
 ### Note
 
-[Join Developer Channel](https://t.me/tamcinemas): LazyDeveloper
+[Join Developer Channel](https://t.me/tamcinemas): 𝙏𝙖𝙢𝙞𝙡 𝘾𝙞𝙣𝙚𝙢𝙖𝙨 𝙃𝘿
 
 ## Disclaimer
 [![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
