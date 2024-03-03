@@ -12,8 +12,8 @@ def is_enabled(value, default):
 
 class script(object):
     HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://t.me/tamcinemas')
-    START_TXT = """✨ 𝙃𝙚𝙮 {}.
-𝙈𝙮𝙨𝙚𝙡𝙛 <a href=https://t.me/{}>{}</a>,\n\n𝗧𝗿𝘂𝘀𝘁 𝗺𝗲 ❗ 𝗜 𝗰𝗮𝗻 𝗼𝗳𝗳𝗲𝗿 𝘆𝗼𝘂 𝗠𝗢𝗩𝗜𝗘𝗦/𝗦𝗘𝗥𝗜𝗘𝗦. 𝗦𝗮𝘃𝗲 𝘆𝗼𝘂𝗿 𝗧𝗶𝗺𝗲 𝗯𝘆 𝗔𝗱𝗱𝗶𝗻𝗴 𝗠𝗲𝗵 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗴𝗿𝗼𝘂𝗽 𝗮𝗻𝗱 𝗲𝗻𝗷𝗼𝘆 𝗺𝘆 𝗰𝗮𝗽𝗮𝗯𝗶𝗹𝗶𝘁𝗶𝗲𝘀 \n\nᴀʀᴇ ʏᴏᴜ ʀᴇᴀᴅʏ ᴍʏ ʙᴜᴅᴅʏ...🤪"""
+    START_TXT = environ.get("START_TXT", '''✨ 𝙃𝙚𝙮 {}.
+𝙈𝙮𝙨𝙚𝙡𝙛 <a href=https://t.me/{}>{}</a>,\n\n𝗧𝗿𝘂𝘀𝘁 𝗺𝗲 ❗ 𝗜 𝗰𝗮𝗻 𝗼𝗳𝗳𝗲𝗿 𝘆𝗼𝘂 𝗠𝗢𝗩𝗜𝗘𝗦/𝗦𝗘𝗥𝗜𝗘𝗦. 𝗦𝗮𝘃𝗲 𝘆𝗼𝘂𝗿 𝗧𝗶𝗺𝗲 𝗯𝘆 𝗔𝗱𝗱𝗶𝗻𝗴 𝗠𝗲𝗵 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗴𝗿𝗼𝘂𝗽 𝗮𝗻𝗱 𝗲𝗻𝗷𝗼𝘆 𝗺𝘆 𝗰𝗮𝗽𝗮𝗯𝗶𝗹𝗶𝘁𝗶𝗲𝘀 \n\nᴀʀᴇ ʏᴏᴜ ʀᴇᴀᴅʏ ᴍʏ ʙᴜᴅᴅʏ...🤪''')
   
     HELP_TXT = "Hᴇʏ {}\nHᴇʀᴇ Mꜱ Mʏ Hᴇʟᴩ"
    
